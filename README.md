@@ -118,7 +118,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-### Git
+### Git ветки
 
 ````shell
 $ git checkout -b start
@@ -130,3 +130,7 @@ M       src/index.tsx
 Переключено на ветку "start"
   
 ````
+Ветки:
+master - итоговая (релиз)
+start - начальная установка
+redux - добавлен Redux
