@@ -10,7 +10,7 @@ export default function App(): ReactElement {
     <Layout>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="route-1" element={<Route1 />} />
+        <Route path="/route-1" element={<Route1 />} />
       </Routes>
     </Layout>
   );

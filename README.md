@@ -1,4 +1,75 @@
-# ReactMD, Create React App, and Typescript Example
+# Простой пример ReactMD и Typescript
+
+### Установка и ПЕРВЫЙ ПРОБНЫЙ запуск:
+
+```sh
+npm install
+npm start
+# or
+yarn
+yarn start
+```
+
+### Инициализация Git
+
+```sh
+git init
+git add .
+git commit -m "Initial commit"
+```
+
+### Git ветки
+
+````shell
+$ git checkout -b start
+$ git branch
+* master
+  start
+$ git checkout start
+M       src/index.tsx
+Переключено на ветку "start"
+  
+````
+Ветки:
+master - итоговая (релиз)
+start - начальная установка
+redux - добавлен Redux
+
+# Сборка
+
+Скрипты описаны в package.json:
+
+````json
+...
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+...
+````
+
+Сборка:
+
+````shell
+$ npm run build
+````
+
+или:
+
+````shell
+$ yarn build
+````
+
+[Документация https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+
+# Запуск
+
+````shell
+$ serve -s build
+````
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) using [react-md](https://react-md.dev) as the component library.
 
@@ -6,7 +77,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This example will setup an example Create React App + ReactMD app that has the following features:
 
-- [\_everything.scss](./src/_everything.scss) to override the default `react-md` theme and feature toggles
+- [\_everything.scss](./src/_everything.scss) to o  verride the default `react-md` theme and feature toggles
 - a reusable [Layout.tsx](./src/components/Layout/Layout.tsx) that:
   - updates all the icons to use `SVGIcon`s instead of `FontIcon`s
   - initializes the `Layout` component from `react-md` with navigation items
@@ -19,24 +90,6 @@ Since this example is not a separate repo, this example will need to be manually
 ```bash
 curl https://codeload.github.com/mlaursen/react-md/tar.gz/main | tar -xz --strip=2 react-md-main/examples/create-react-app-typescript
 cd create-react-app-typescript
-```
-
-Install it and run:
-
-```sh
-npm install
-npm start
-# or
-yarn
-yarn start
-```
-
-Finally, initialize the git repo and create your first commit:
-
-```sh
-git init
-git add .
-git commit -m "Initial commit"
 ```
 
 ## Learn More
@@ -78,6 +131,9 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+````shell
+yarn build
+````
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
@@ -118,19 +174,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-### Git ветки
-
-````shell
-$ git checkout -b start
-$ git branch
-* master
-  start
-$ git checkout start
-M       src/index.tsx
-Переключено на ветку "start"
-  
-````
-Ветки:
-master - итоговая (релиз)
-start - начальная установка
-redux - добавлен Redux
