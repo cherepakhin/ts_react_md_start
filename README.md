@@ -1,15 +1,5 @@
 # Простой пример ReactMD и Typescript
 
-### Установка и ПЕРВЫЙ ПРОБНЫЙ запуск:
-
-```sh
-npm install
-npm start
-# or
-yarn
-yarn start
-```
-
 ### Инициализация Git
 
 ```sh
@@ -34,6 +24,17 @@ M       src/index.tsx
 master - итоговая (релиз)
 start - начальная установка
 redux - добавлен Redux
+
+### Установка и ПЕРВЫЙ ПРОБНЫЙ запуск:
+
+```sh
+npm install
+npm start
+# or
+yarn
+yarn start
+```
+
 
 # Сборка
 
